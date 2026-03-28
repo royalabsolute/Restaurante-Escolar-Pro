@@ -1,0 +1,8 @@
+{
+  "backend_port": 5000,
+  "server_ip": "192.168.1.8",
+  "local_url": "http://localhost:5000",
+  "lan_url": "http://192.168.1.8:5000",
+  "status": "running",
+  "timestamp": "2026-03-27T05:28:34.815Z"
+}

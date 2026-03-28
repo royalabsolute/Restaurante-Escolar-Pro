@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bienvenido al Restaurante Escolar</title>
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background-color: #f4f6fb;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    }
+    h1 {
+      color: #1d4ed8;
+      font-size: 24px;
+      margin-bottom: 16px;
+      letter-spacing: 0.4px;
+    }
+    p {
+      line-height: 1.6;
+      margin: 0 0 16px;
+      font-size: 15px;
+    }
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 12px 16px;
+      border-radius: 12px;
+      margin: 24px 0;
+      color: #1e3a8a;
+      font-weight: 600;
+    }
+    .cta {
+      margin-top: 32px;
+      text-align: center;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Bienvenido, {{nombre_completo}}!</h1>
+
+    <p>
+      Gracias por completar tu registro en el <strong>Restaurante Escolar de la I.E. San Antonio de Prado</strong>.
+      Nuestro equipo ha recibido tu solicitud y realizará la verificación correspondiente para habilitar tu acceso.
+    </p>
+
+    <div class="highlight">
+      Recuerda tener a la mano tu documento de identidad y estar atento a tu correo. Te avisaremos una vez tu
+      inscripción haya sido validada.
+    </div>
+
+    <p>
+      Mientras tanto, puedes ingresar al portal con tu correo y contraseña para consultar el estado de tu registro
+      y actualizar tus datos si es necesario.
+    </p>
+
+    <p>
+      Fecha de registro: <strong>{{fecha_registro}}</strong>
+    </p>
+
+    <div class="cta">
+      <a href="{{enlace_portal}}" target="_blank" rel="noopener">Ir al Portal del Restaurante Escolar</a>
+    </div>
+
+    <p class="footer">
+      Este es un mensaje automático, por favor no respondas a este correo.<br />
+      Si necesitas ayuda, comunícate con Secretaría Académica.
+    </p>
+  </div>
+</body>
+</html>

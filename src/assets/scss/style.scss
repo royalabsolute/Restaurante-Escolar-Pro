@@ -1,0 +1,82 @@
+/**======================================================================
+=========================================================================
+Template Name: Sistema de Asistencia Escolar
+Author: Sistema Local
+File: style.css
+=========================================================================
+=================================================================================== */
+// vendor css font
+
+// theme font
+@import '../fonts/feather';
+@import '../fonts/fontawesome';
+@import '../fonts/material';
+@import '../fonts/cryptofont';
+
+// main framework
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+
+@import 'settings/color-variables';
+@import 'settings/theme-variables';
+@import 'settings/bootstrap-variables';
+
+@import 'bootstrap/scss/bootstrap';
+@import 'react-modules/_tooltip';
+@import 'react-modules/_popover';
+@import 'react-modules/_carousel';
+
+// main framework
+@import 'themes/generic';
+@import 'themes/general';
+
+// Layouts
+@import 'themes/layouts/pc-sidebar';
+@import 'themes/layouts/pc-header';
+@import 'themes/layouts/pc-common';
+
+// Components
+@import 'themes/components/avatar';
+@import 'themes/components/badge';
+@import 'themes/components/button';
+@import 'themes/components/dropdown';
+@import 'themes/components/card';
+@import 'themes/components/progress';
+@import 'themes/components/table';
+@import 'themes/components/tabs';
+@import 'themes/components/form';
+
+// pages
+
+@import 'pages/dashboard';
+@import 'pages/icon-lauouts';
+@import 'pages/authentication';
+
+// custom plugins
+
+@import 'simplebar-react/dist/simplebar.min.css';
+@import 'themes/plugins/simplebar-scrollbar';
+
+// Customizer CSS
+@import 'customizer';
+
+@import 'react-common.scss';
+
+// QR Reader optimizations
+.qr-reader-video {
+  canvas {
+    will-change: auto !important;
+  }
+  
+  video {
+    will-change: auto !important;
+  }
+}
+
+// Suppress canvas warnings globally for QR scanner
+#qr-video {
+  canvas {
+    will-change: auto !important;
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "name": "restaurante-escolar-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de Asistencia Restaurante Escolar - Frontend",
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/icons-material": "^6.2.0",
+    "@mui/material": "^6.2.0",
+    "@mui/x-data-grid": "^7.22.3",
+    "@mui/x-date-pickers": "^7.22.3",
+    "@tanem/react-nprogress": "^5.0.53",
+    "@vitejs/plugin-react": "^4.3.4",
+    "apexcharts": "^4.3.0",
+    "axios": "^1.7.9",
+    "bootstrap": "5.3.3",
+    "date-fns": "^2.30.0",
+    "feather-icons-react": "^0.7.0",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.23.24",
+    "html2canvas": "^1.4.1",
+    "js-cookie": "^3.0.5",
+    "jspdf": "^3.0.3",
+    "jspdf-autotable": "^5.0.7",
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.4",
+    "qrcode.react": "^4.2.0",
+    "react": "^18.3.1",
+    "react-apexcharts": "^1.7.0",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.2",
+    "react-qr-code": "^2.0.18",
+    "react-rnd": "^10.5.2",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^2.13.3",
+    "simplebar-react": "^3.2.6",
+    "socket.io-client": "^4.8.3",
+    "vite": "^7.1.9",
+    "vite-tsconfig-paths": "^5.1.3",
+    "web-vitals": "^4.2.4",
+    "yup": "^1.4.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "dev:network": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:network": "vite preview --host 0.0.0.0",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "network-info": "node backend/network-config.js",
+    "start:all": "concurrently \"npm run dev:network\" \"npm run backend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "security:audit": "npm audit && cd backend && npm audit",
+    "security:fix": "npm audit fix && cd backend && npm audit fix",
+    "security:generate-secrets": "cd backend && node scripts/generate-secrets.js",
+    "db:optimize": "cd backend && node scripts/add-performance-indexes.js",
+    "db:backup": "cd backend && npm run backup",
+    "db:seed": "cd backend && npm run seed",
+    "db:clean": "cd backend && npm run db:clean",
+    "db:health": "cd backend && npm run health",
+    "system:health": "cd backend && npm run health",
+    "system:setup": "npm run security:generate-secrets && npm run db:optimize",
+    "deploy:check": "npm run security:audit && npm run lint && npm run build",
+    "migration:final": "node scripts/final-migration.js",
+    "automation": "node automation.js"
+  },
+  "overrides": {
+    "autoprefixer": "10.4.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.3",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.37.0",
+    "concurrently": "^9.2.1",
+    "env-cmd": "^10.1.0",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.23",
+    "globals": "^16.4.0",
+    "prettier": "^3.4.1",
+    "sass": "1.77.6"
+  }
+}

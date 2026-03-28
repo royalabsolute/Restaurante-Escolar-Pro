@@ -1,0 +1,15 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "js,json",
+  "ignore": [
+    "backend-port.json",
+    "public/backend-port.json",
+    "uploads/*",
+    "node_modules/*",
+    "logs/*",
+    "backups/*"
+  ],
+  "exec": "node"
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Personalizado - Restaurante Escolar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+            color: white;
+            padding: 35px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0 0 8px 0;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subtitle {
+            margin: 0;
+            font-size: 15px;
+            opacity: 0.95;
+            letter-spacing: 0.5px;
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 32px 30px;
+        }
+
+        .greeting {
+            font-size: 17px;
+            color: #1e293b;
+            margin: 0 0 20px 0;
+        }
+
+        .greeting strong {
+            color: #1976d2;
+        }
+
+        .intro-text {
+            font-size: 15px;
+            color: #475569;
+            margin: 0 0 28px 0;
+            line-height: 1.7;
+        }
+
+        .periodo-section {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 4px solid #1976d2;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 24px 0;
+        }
+
+        .periodo-section h3 {
+            margin: 0 0 10px 0;
+            font-size: 15px;
+            color: #1565c0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .periodo-section p {
+            margin: 0;
+            font-size: 16px;
+            color: #0d47a1;
+            font-weight: 600;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .stat-card {
+            background-color: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .stat-card .icon-stat {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .stat-card .label {
+            font-size: 13px;
+            color: #64748b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .stat-card .value {
+            font-size: 28px;
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .stat-card.highlight {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-color: #1976d2;
+        }
+
+        .stat-card.highlight .value {
+            color: #1976d2;
+            font-size: 32px;
+        }
+
+        .info-box {
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin: 24px 0;
+        }
+
+        .info-box h4 {
+            margin: 0 0 12px 0;
+            font-size: 15px;
+            color: #1565c0;
+            font-weight: 700;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .info-box li {
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        .attachment-banner {
+            background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 28px 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .attachment-banner .icon-attach {
+            font-size: 36px;
+        }
+
+        .attachment-banner .text h4 {
+            margin: 0 0 4px 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .attachment-banner .text p {
+            margin: 0;
+            font-size: 13px;
+            opacity: 0.95;
+        }
+
+        .footer {
+            background-color: #f1f5f9;
+            padding: 24px 30px;
+            border-top: 2px solid #cbd5e1;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .footer-section h4 {
+            margin: 0 0 6px 0;
+            font-size: 13px;
+            color: #475569;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-section p {
+            margin: 0;
+            font-size: 13px;
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .footer-divider {
+            height: 1px;
+            background-color: #cbd5e1;
+            margin: 16px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+
+        .footer-bottom strong {
+            color: #475569;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .signature {
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .signature p {
+            margin: 4px 0;
+            font-size: 14px;
+            color: #475569;
+        }
+
+        .signature strong {
+            color: #1976d2;
+            font-size: 15px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .content,
+            .header,
+            .footer {
+                padding: 20px 16px;
+            }
+
+            .footer-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .stat-card .value {
+                font-size: 24px;
+            }
+
+            .stat-card.highlight .value {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="icon">📈</div>
+            <h1>Reporte Personalizado</h1>
+            <p class="subtitle">Restaurante Escolar - I.E. San Antonio de Prado</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <p class="greeting">Hola <strong>{{nombre_usuario}}</strong>,</p>
+
+            <p class="intro-text">
+                Adjunto encontrarás el reporte solicitado. Este documento ha sido generado según los
+                criterios y filtros que especificaste, y contiene información detallada del período consultado.
+            </p>
+
+            <!-- Period Section -->
+            <div class="periodo-section">
+                <h3>📅 Período de Análisis</h3>
+                <p>{{periodo_inicio}} al {{periodo_fin}}</p>
+            </div>
+
+            <!-- Statistics Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="icon-stat">👥</div>
+                    <div class="label">Estudiantes</div>
+                    <div class="value">{{total_estudiantes}}</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="icon-stat">✅</div>
+                    <div class="label">Asistencias</div>
+                    <div class="value">{{total_asistencias}}</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="icon-stat">❌</div>
+                    <div class="label">Faltas</div>
+                    <div class="value">{{total_faltas}}</div>
+                </div>
+
+                <div class="stat-card highlight">
+                    <div class="icon-stat">📊</div>
+                    <div class="label">Promedio</div>
+                    <div class="value">{{promedio_asistencia}}%</div>
+                </div>
+            </div>
+
+            <!-- Information Box -->
+            <div class="info-box">
+                <h4>ℹ️ Acerca de este reporte</h4>
+                <ul>
+                    <li>Los datos fueron calculados en tiempo real desde la base de datos</li>
+                    <li>El archivo adjunto incluye el detalle completo por estudiante</li>
+                    <li>Puedes importar el archivo a Excel para análisis adicionales</li>
+                    <li>Todos los porcentajes están redondeados a dos decimales</li>
+                </ul>
+            </div>
+
+            <!-- Attachment Banner -->
+            <div class="attachment-banner">
+                <span class="icon-attach">📎</span>
+                <div class="text">
+                    <h4>Archivo Adjunto Incluido</h4>
+                    <p>El documento Excel/CSV contiene todos los detalles del análisis realizado</p>
+                </div>
+            </div>
+
+            <!-- Signature -->
+            <div class="signature">
+                <p><strong>Enviado automáticamente por el sistema de reportes del Restaurante Escolar.</strong></p>
+                <p>Fecha de generación: {{fecha_generacion}}</p>
+                <p style="margin-top: 12px; font-size: 13px; color: #64748b;">
+                    Si necesitas un reporte con criterios diferentes o tienes alguna pregunta,
+                    no dudes en generar un nuevo reporte desde el panel o contactar al equipo de soporte.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>📧 Contacto</h4>
+                    <p>
+                        contacto@iestudent.edu.co<br>
+                        secretaria@iestudent.edu.co
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 Teléfono</h4>
+                    <p>
+                        300 415 4444<br>
+                        Línea directa
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>📍 Dirección</h4>
+                    <p>
+                        Cra. 77, 41 sur #02<br>
+                        Medellín, Antioquia
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <strong>I.E. San Antonio de Prado</strong>
+                <p>Sistema de Gestión del Restaurante Escolar</p>
+                <p style="margin-top: 8px; font-size: 11px;">
+                    Este es un correo automático, por favor no responder directamente a este mensaje.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

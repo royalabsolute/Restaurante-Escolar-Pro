@@ -1,0 +1,104 @@
+/* Consistencia de colores del navbar */
+.pc-header {
+  background: #1c232f !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08) !important;
+}
+
+.pc-header .pc-head-link {
+  color: #ffffff !important;
+}
+
+.pc-header .pc-head-link:hover {
+  color: #e3f2fd !important;
+}
+
+.pc-header .dropdown-toggle::after {
+  border-top-color: #ffffff !important;
+}
+
+.pc-header .btn-link {
+  color: #ffffff !important;
+}
+
+.pc-header .btn-link:hover {
+  color: #e3f2fd !important;
+}
+
+/* Consistencia de colores en toda la aplicación */
+.pc-navbar {
+  background: #1c232f !important;
+}
+
+.pc-navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+.pc-navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.pc-navbar .nav-link:hover {
+  color: #e3f2fd !important;
+}
+
+/* Asegurar que los dropdowns mantengan el tema */
+.pc-header .dropdown-menu {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pc-header .dropdown-item {
+  color: #1c232f;
+}
+
+.pc-header .dropdown-item:hover {
+  background: #f5f5f5;
+  color: #1c232f;
+}
+
+/* Iconos del header */
+.pc-header .material-icons,
+.pc-header .feather,
+.pc-header svg {
+  color: #ffffff !important;
+}
+
+/* Breadcrumb con fondo consistente */
+.breadcrumb-header {
+  background: #1c232f !important;
+  color: #ffffff !important;
+}
+
+/* Asegurar que los elementos MUI mantengan consistencia */
+.MuiAppBar-root {
+  background-color: #1c232f !important;
+  color: #ffffff !important;
+}
+
+.MuiToolbar-root {
+  background-color: #1c232f !important;
+  color: #ffffff !important;
+}
+
+/* Forzar color en todos los elementos del header */
+.pc-header *,
+.pc-header .header-wrapper *,
+.pc-header .pc-head-link *,
+.pc-header .me-auto *,
+.pc-header .ms-auto * {
+  color: #ffffff !important;
+}
+
+.pc-header button,
+.pc-header .btn {
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+.pc-header button:hover,
+.pc-header .btn:hover {
+  color: #e3f2fd !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}

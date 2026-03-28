@@ -1,0 +1,66 @@
+{
+  "name": "restaurante-escolar-backend",
+  "version": "1.0.0",
+  "description": "Backend para Sistema de Asistencia Restaurante Escolar",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "backup": "node scripts/backup-database.js",
+    "health": "node scripts/health-check.js",
+    "seed": "node scripts/seed-database.js",
+    "seed:clean": "node scripts/seed-database.js --clean",
+    "db:clean": "node scripts/clean-inappropriate-data.js",
+    "db:optimize": "node scripts/add-performance-indexes.js",
+    "security:generate": "node scripts/generate-secrets.js",
+    "system:maintenance": "npm run health && npm run db:optimize",
+    "deploy:production": "NODE_ENV=production node src/index.js",
+    "test": "cross-env NODE_ENV=test jest --detectOpenHandles",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "test:coverage": "cross-env NODE_ENV=test jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "./src/tests/setup.js"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "verbose": true
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.14.3",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^7.0.10",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^13.0.0",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.2.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

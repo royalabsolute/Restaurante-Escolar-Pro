@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Advertencia de Inasistencia - Restaurante Escolar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fb;
+            color: #1f2933;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 12px 32px rgba(21, 60, 111, 0.08);
+        }
+
+        .header {
+            border-bottom: 3px solid #fbc02d;
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #f57c00;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .highlight {
+            background: #fff8e1;
+            border-left: 4px solid #ffb300;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 24px 0;
+            color: #856404;
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        .footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚠️ Advertencia de Inasistencias</h1>
+        </div>
+        <div class="content">
+            <p>Hola {{nombre_estudiante}},</p>
+            <p>
+                Este es un mensaje preventivo para informarte que registras
+                <strong>{{faltas_consecutivas}} faltas consecutivas</strong> sin justificar en el
+                Restaurante Escolar de la I.E. San Antonio de Prado.
+            </p>
+            <div class="highlight">
+                <p style="margin: 0">
+                    <strong>¡Atención!</strong> Te encuentras a solo 1 falta de alcanzar el límite de
+                    {{limite_faltas}} ausencias seguidas, lo cual resultará en la
+                    <strong>suspensión automática</strong> de tu cupo en el comedor.
+                </p>
+            </div>
+            <p>
+                Si has faltado por motivos de fuerza mayor, te recomendamos ingresar al portal y
+                <strong>tramitar tu justificación lo antes posible</strong>. Recuerda adjuntar los
+                soportes necesarios (certificados médicos, etc.).
+            </p>
+            <p>
+                Puedes gestionar tus justificaciones desde el calendario de asistencias en tu panel.
+            </p>
+            <p>
+                Ante cualquier duda, puedes escribirnos al correo
+                <a href="mailto:restaurante@iesanantoniodeprado.edu.co">restaurante@iesanantoniodeprado.edu.co</a>.
+            </p>
+            <p>Gracias por tu colaboración.</p>
+        </div>
+        <div class="footer">
+            <p>
+                Restaurante Escolar · Institución Educativa San Antonio de Prado<br />
+                Este mensaje se envió automáticamente. Por favor no respondas a este correo.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

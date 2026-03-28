@@ -1,0 +1,11 @@
+🚀 SISTEMA DE RESTAURANTE ESCOLAR
+
+Para iniciar el sistema de forma correcta y fácil:
+
+1. Inicia XAMPP (Apache y MySQL deben estar en verde).
+2. Haz CLICK DERECHO en el archivo:
+   👉 LAUNCHER_RESTAURANTE.bat
+3. Selecciona "Ejecutar como administrador".
+4. Presiona la tecla [1] para iniciar todo automáticamente.
+
+¡Listo! El sistema se abrirá en tu navegador.

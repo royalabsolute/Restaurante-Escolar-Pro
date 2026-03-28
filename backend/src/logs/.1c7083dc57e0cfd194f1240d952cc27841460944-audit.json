@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\xampp\\htdocs\\RestauranteEscolarNODE\\backend\\src\\logs\\.1c7083dc57e0cfd194f1240d952cc27841460944-audit.json",
+    "files": [
+        {
+            "date": 1771786283669,
+            "name": "C:\\xampp\\htdocs\\RestauranteEscolarNODE\\backend\\src\\logs\\app-2026-02-22.log",
+            "hash": "cc4e955dde34450ca7eb1707101411fa3c034d0a47acbbe980dea500e18dd76b"
+        },
+        {
+            "date": 1771823046316,
+            "name": "C:\\xampp\\htdocs\\RestauranteEscolarNODE\\backend\\src\\logs\\app-2026-02-23.log",
+            "hash": "713183bfeab693b970d5409c7063013cc483073dfb636a10259044292a5e93b7"
+        }
+    ],
+    "hashType": "sha256"
+}

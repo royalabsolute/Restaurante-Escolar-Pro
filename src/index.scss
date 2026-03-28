@@ -1,0 +1,78 @@
+// Default Style
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import './assets/scss/style.scss';
+@import './assets/scss/custom-navbar.scss';
+
+// Ocultar cualquier referencia a DashboardKit
+*:before,
+*:after {
+  content: none !important;
+}
+
+[data-text*="DashboardKit"],
+[title*="DashboardKit"],
+*:contains("DashboardKit") {
+  display: none !important;
+}
+
+// Ocultar logos no deseados
+.pc-header-logo,
+.pc-logo,
+.brand-logo {
+  visibility: hidden !important;
+}
+
+// Si es un pseudo-elemento, ocultarlo
+*::before,
+*::after {
+  &[content*="DashboardKit"] {
+    display: none !important;
+  }
+}
+
+// Ocultar header antiguo en móviles (reemplazado por isla dinámica)
+@media (max-width: 1199px) {
+  .pc-mob-header {
+    display: none !important;
+  }
+  
+  // Asegurar que el menú lateral no se superponga
+  .pc-sidebar {
+    display: none !important;
+  }
+  
+  // Ocultar overlay del menú
+  .pc-menu-overlay {
+    display: none !important;
+  }
+}
+
+// Ajustes para escritorio
+@media (min-width: 1200px) {
+  // Ocultar header antiguo (reemplazado por isla dinámica)
+  .pc-header {
+    display: none !important;
+  }
+  
+  // Panel lateral en su estado normal
+  .pc-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    z-index: 1030;
+  }
+}
+
+// Eliminar padding innecesario del contenedor
+.pc-container {
+  position: static !important;
+  top: 0 !important;
+  margin-left: 0 !important;
+  min-height: auto !important;
+  
+  .pcoded-content {
+    padding: 0 !important;
+  }
+}

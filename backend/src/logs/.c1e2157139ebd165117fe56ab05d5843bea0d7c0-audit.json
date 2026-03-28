@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/Jagger/Downloads/RestauranteEscolarNODE/backend/src/logs/.c1e2157139ebd165117fe56ab05d5843bea0d7c0-audit.json",
+    "files": [
+        {
+            "date": 1774564692416,
+            "name": "/home/Jagger/Downloads/RestauranteEscolarNODE/backend/src/logs/app-2026-03-26.log",
+            "hash": "c86ccf1a97f08f0364d7416bb6feccea6ad2d68a5d0c3b973bad20c23508bef1"
+        },
+        {
+            "date": 1774587701014,
+            "name": "/home/Jagger/Downloads/RestauranteEscolarNODE/backend/src/logs/app-2026-03-27.log",
+            "hash": "4335549dc771446c444bd0bc0a5fd355e960553cf146c455769d5b6a1f510cd7"
+        }
+    ],
+    "hashType": "sha256"
+}

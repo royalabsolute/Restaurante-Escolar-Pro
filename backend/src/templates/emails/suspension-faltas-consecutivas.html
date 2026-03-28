@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Suspensión temporal por inasistencias</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f7fb;
+        color: #1f2933;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 32px;
+        border-radius: 12px;
+        box-shadow: 0 12px 32px rgba(21, 60, 111, 0.08);
+      }
+      .header {
+        border-bottom: 3px solid #f97316;
+        padding-bottom: 16px;
+        margin-bottom: 24px;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 22px;
+        color: #ef4444;
+      }
+      .content p {
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+      .highlight {
+        background: #fef3c7;
+        border-left: 4px solid #f59e0b;
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin: 24px 0;
+        color: #92400e;
+      }
+      .footer {
+        margin-top: 32px;
+        font-size: 12px;
+        color: #64748b;
+      }
+      .footer a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Suspensión temporal del servicio</h1>
+      </div>
+      <div class="content">
+        <p>Hola {{nombre_estudiante}},</p>
+        <p>
+          Te informamos que, a partir del <strong>{{fecha_suspension}}</strong>, tu acceso al
+          Restaurante Escolar de la I.E. San Antonio de Prado ha quedado
+          <strong>suspendido temporalmente</strong> debido a que registras
+          <strong>{{faltas_consecutivas}} faltas consecutivas</strong> sin justificar.
+        </p>
+        <div class="highlight">
+          <p style="margin: 0">
+            Recuerda que el reglamento establece una suspensión automática al alcanzar
+            {{limite_faltas}} ausencias seguidas sin aprobación de la secretaría.
+          </p>
+        </div>
+        <p>
+          Si consideras que alguna de estas faltas debe ser justificada, por favor ingresa al
+          portal y diligencia la justificación correspondiente. Una vez sea aprobada por
+          secretaría, tu estado será reactivado automáticamente.
+        </p>
+        <p>
+          Ante cualquier inquietud adicional puedes comunicarte con la secretaría de la
+          institución o escribirnos al correo <a href="mailto:restaurante@iesanantoniodeprado.edu.co">restaurante@iesanantoniodeprado.edu.co</a>.
+        </p>
+        <p>Gracias por tu atención.</p>
+      </div>
+      <div class="footer">
+        <p>
+          Restaurante Escolar · Institución Educativa San Antonio de Prado<br />
+          Este mensaje se envió automáticamente. Por favor no respondas a este correo.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
