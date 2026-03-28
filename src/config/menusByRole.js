@@ -229,12 +229,12 @@ const menusByRole = {
         icon: 'icon-navigation',
         children: [
           {
-            id: 'scanner-mobile',
-            title: 'Escaneo Móvil',
+            id: 'scanner',
+            title: 'Control de Asistencia',
             type: 'item',
             icon: 'material-icons-two-tone',
             iconname: 'qr_code_scanner',
-            url: '/app/alfabetizador/escaneo'
+            url: '/app/asistencia/scanner'
           }
         ]
       }

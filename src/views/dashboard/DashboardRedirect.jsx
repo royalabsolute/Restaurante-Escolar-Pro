@@ -17,7 +17,7 @@ const DashboardRedirect = () => {
         secretaria: '/app/dashboard/secretaria',
         coordinador_convivencia: '/app/dashboard/coordinador', // Panel propio de coordinación
         escaner: '/app/dashboard/escaner',
-        alfabetizador: '/app/alfabetizador/escaneo',
+        alfabetizador: '/app/asistencia/scanner',
         docente: '/app/dashboard/docente',
         estudiante: '/app/dashboard/estudiante',
         invitado: '/app/dashboard/guest'

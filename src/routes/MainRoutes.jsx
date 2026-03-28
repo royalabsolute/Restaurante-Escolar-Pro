@@ -108,7 +108,7 @@ const MainRoutes = {
     // Asistencia (scanner) - accesible por docentes, admin, secretaria, escaner
     {
       path: 'asistencia/scanner',
-      element: <ProtectedRoute allowedRoles={['admin', 'secretaria', 'escaner', 'docente']}><AsistenciaScanner /></ProtectedRoute>
+      element: <ProtectedRoute allowedRoles={['admin', 'secretaria', 'escaner', 'docente', 'alfabetizador']}><AsistenciaScanner /></ProtectedRoute>
     },
     // Admin: Gestión de Grupos Académicos
     {
@@ -140,11 +140,6 @@ const MainRoutes = {
     {
       path: 'asistencia/hoy',
       element: <HistorialAsistencia />
-    },
-    // Alfabetizador Specialized View
-    {
-      path: 'alfabetizador/escaneo',
-      element: <ProtectedRoute allowedRoles={['alfabetizador', 'admin']}><ScannerMobile /></ProtectedRoute>
     },
     // Estudiantes (según rol)
     {

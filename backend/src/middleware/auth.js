@@ -156,10 +156,10 @@ const requireStudent = requireRole(['estudiante']);
 const requireTeacher = requireRole(['escaner', 'docente']);
 
 // Middleware para verificar que sea escáner, docente o admin (para asistencia)
-const requireTeacherOrAdmin = requireRole(['escaner', 'docente', 'admin']);
+const requireTeacherOrAdmin = requireRole(['escaner', 'docente', 'admin', 'alfabetizador']);
 
 // Middleware para verificar que sea escáner o roles con acceso a asistencia
-const requireScannerAccess = requireRole(['escaner', 'docente', 'admin', 'secretaria', 'coordinador_convivencia']);
+const requireScannerAccess = requireRole(['escaner', 'docente', 'admin', 'secretaria', 'coordinador_convivencia', 'alfabetizador']);
 
 // Middleware para verificar que sea secretaria
 const requireSecretary = requireRole(['secretaria']);

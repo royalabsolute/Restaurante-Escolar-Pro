@@ -67,19 +67,22 @@ npm run dev
 
 ---
 
-## 📸 Demo
-*(Aquí puedes añadir capturas de pantalla de tu aplicación para impresionar a tus clientes)*
+## 📸 Vistazo del Sistema
 
----
+### Panel de Administración
+![Dashboard Admin](assets/screenshots/dashboard-admin.png)
+
+### Sistema de Escaneo (Alfabetizadores/Docentes)
+![Dashboard Scanner](assets/screenshots/dashboard-scanner.png)
 
 ## 📜 Licencia
-Este proyecto está bajo la Licencia **MIT**. Siéntete libre de usarlo y mejorarlo.
+Este proyecto es **Propiedad Intelectual Privada**. Puedes ver el código con fines informativos, pero no está permitido su uso, copia o distribución sin licencia comercial previa. Consulta el archivo [LICENSE](file:///home/Jagger/Downloads/RestauranteEscolarNODE/LICENSE) para más detalles.
+
+## 📞 Contacto y Soporte
+Si estás interesado en implementar este sistema en tu institución o necesitas soporte técnico, puedes contactarme a través de:
+
+- **Email:** [royalabsolute0@gmail.com](mailto:royalabsolute0@gmail.com)
+- **WhatsApp / Teléfono:** [+57 3505682284](tel:+573505682284)
 
 ---
-
-## ✉️ Contacto
-¿Interesado en implementar este sistema en tu institución? 
-[Tu Nombre/Empresa](mailto:tu-email@ejemplo.com)
-
----
-*Desarrollado con ❤️ para mejorar la educación y la alimentación escolar.*
+Desarrollado con ❤️ para la educación por **royalabsolute**.

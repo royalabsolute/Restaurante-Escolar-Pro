@@ -17,9 +17,6 @@ class AuthController {
         const token = authService.generateToken(user);
         const additionalInfo = await authService.getAdditionalInfo(user);
 
-        if (user.rol === 'alfabetizador') {
-          await authService.createAlfabetizadorSession(user.id);
-        }
 
         logger.auth.login(user, req.ip);
 
@@ -95,9 +92,6 @@ class AuthController {
 
   static async logout(req, res) {
     try {
-      if (req.user && req.user.rol === 'alfabetizador') {
-        await authService.closeAlfabetizadorSession(req.user.id);
-      }
       return res.success(null, 'Bye!');
     } catch (error) {
       return res.error('Error logout', 500);

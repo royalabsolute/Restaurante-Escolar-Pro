@@ -8,7 +8,7 @@ router.use(authenticateToken);
 
 // Validar QR y registrar asistencia
 router.post('/validate-attendance',
-  requireRole(['admin', 'secretaria', 'docente', 'escaner']),
+  requireRole(['admin', 'secretaria', 'docente', 'escaner', 'alfabetizador']),
   qrController.validateQRAndRegisterAttendance
 );
 
@@ -20,7 +20,7 @@ router.post('/generate/:id',
 
 // Obtener información de estudiante por código QR
 router.get('/student/:codigo_qr',
-  requireRole(['admin', 'secretaria', 'docente', 'escaner']),
+  requireRole(['admin', 'secretaria', 'docente', 'escaner', 'alfabetizador']),
   qrController.getStudentByQR
 );
 

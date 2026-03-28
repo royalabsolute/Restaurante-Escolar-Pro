@@ -185,7 +185,7 @@ export const AuthProvider = ({ children }) => {
       const roleRedirects = {
         admin: '/app/dashboard/admin',
         secretaria: '/app/dashboard/secretaria',
-        alfabetizador: '/app/dashboard/alfabetizador',
+        alfabetizador: '/app/asistencia/scanner',
         docente: '/app/dashboard/docente',
         estudiante: '/app/dashboard/estudiante'
       };
