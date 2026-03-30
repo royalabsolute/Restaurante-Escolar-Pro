@@ -1,6 +1,6 @@
-# 🍽️ Restaurante Escolar Pro - Gestión Unificada
+# Restaurante Escolar
 
-¡Bienvenido a **Restaurante Escolar Pro**! Una solución integral y moderna diseñada para automatizar el control de asistencia y la gestión administrativa de comedores escolares. Este sistema utiliza tecnología de vanguardia como **códigos QR**, **WebSockets en tiempo real** e **IA** para facilitar la vida de directivos y alumnos.
+¡Bienvenido a **Restaurante Escolar**! Una solución integral y moderna diseñada para automatizar el control de asistencia y la gestión administrativa de comedores escolares. Este sistema utiliza tecnología de vanguardia como **códigos QR**, **WebSockets en tiempo real** e **IA** para facilitar la vida de directivos y alumnos.
 
 ---
 
@@ -79,10 +79,10 @@ npm run dev
 Este proyecto es **Propiedad Intelectual Privada**. Puedes ver el código con fines informativos, pero no está permitido su uso, copia o distribución sin licencia comercial previa. Consulta el archivo [LICENSE](file:///home/Jagger/Downloads/RestauranteEscolarNODE/LICENSE) para más detalles.
 
 ## 📞 Contacto y Soporte
-Si estás interesado en implementar este sistema en tu institución o necesitas soporte técnico, puedes contactarme a través de:
+Si estás interesado en implementar este sistema en tu institución o escalar el proyecto a otras necesidades y necesitas soporte técnico, puedes contactarme a través de:
 
 - **Email:** [royalabsolute0@gmail.com](mailto:royalabsolute0@gmail.com)
 - **WhatsApp / Teléfono:** [+57 3505682284](tel:+573505682284)
 
 ---
-Desarrollado con ❤️ para la educación por **royalabsolute**.
+Desarrollado con ❤️ para la educación por **royal absolute**.
